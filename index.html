@@ -406,7 +406,43 @@
             </li>
           </ul>
         </div>
+        <form class="form-form" name="subscribe">
+          <label class="form-label" for="footer-mail">
+            <span class="label-text">Subscribe</span>
+          </label>
+          <div class="footer-mail">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="footer-mail"
+              placeholder="E-mail"
+            />
+            <button class="form-button" type="submit" name="subscribe">
+              Subscribe
+              <svg width="24" height="20" class="form-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label for="modal-name">Name</label>
+          <input type="text" id="modal-name" />
+          <label for="modal-tel">Phone</label>
+          <input type="tel" id="modal-tel" />
+          <label for="modal-mail">E-mail</label>
+          <input type="email" id="modal-mail" />
+          <label for="modal-comment">Comment</label>
+          <input type="text" id="modal-comment" placeholder="Text input"/>
+
+        </form>
+      </div>
+    </div>
   </body>
 </html>
